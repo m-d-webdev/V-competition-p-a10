@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"> -->
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        background-color: rgb(255, 255, 255);
+        min-height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        height: 800px;
+        backdrop-filter: blur(10px);
+        background-image: url(img/Donna\ Jos\ Sia.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: anim1 .4s;
+        border-radius: 20px;
+    }
+
+    @keyframes anim1 {
+        0% {
+            transform: scale(.1);
+            opacity: .5;
+        }
+    }
+
+    /* welcoming ============== */
+    .inscription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        height: 800px;
+        backdrop-filter: blur(10px);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .cnt2 {
+        width: 100%;
+        max-width: 700px;
+        padding: 10px;
+        height: 55%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border-radius: 20px;
+        align-items: center;
+        background-color: rgba(132, 201, 247, 0.162);
+        display: none;
+        animation: ann1 .4s alternate;
+    }
+
+    @keyframes ann1{
+        0%{
+            transform: scale(0);
+        }
+    }
+    .intro {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url(img/Screenshot\ 2024-03-11\ 220401.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bextToinscript {
+        width: 250px;
+        height: 40px;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        background-color: black;
+        color: #fff;
+        align-self: flex-end;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+
+    .bextToinscript:hover {
+        background-color: rgba(0, 0, 0, 0.603);
+
+    }
+
+
+
+    .titel {
+        font-size: 27px;
+
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    .name_user {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name_user input {
+        width: 350px;
+        height: 40px;
+        outline: none;
+        border: solid 1px black;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+        letter-spacing: 1.2px;
+        text-align: center;
+        z-index: 3;
+        background-color: transparent;
+    }
+
+    .name_para {
+        position: absolute;
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 900;
+        z-index: 2;
+        transition: .3s;
+    }
+
+    .name_user input:focus {
+        border: solid 1px blue;
+        background-color: rgb(227, 244, 255);
+        ;
+        filter: drop-shadow(0px 0px 1px blue);
+    }
+
+    .name_user input:focus~.name_para,
+    .name_user input:not(:placeholder-shown)~.name_para {
+        transform: translate(-130px, -20px);
+        font-size: 12px;
+        padding: 3px 10px;
+        color: blue;
+        background-color: rgb(227, 244, 255);
+        z-index: 3;
+    }
+
+    .start1 {
+        width: 200px;
+        height: 30px;
+        font-size: 22px;
+        font-weight: 600;
+        background-color: #ffffff;
+        border: solid 1px rgba(0, 0, 0, 0.723);
+        border-radius: 5px;
+    }
+
+    .start1:hover {
+        background-color: #65a18d91;
+        width: 230px;
+        transition: .4s;
+
+    }
+
+    /* HOW IS WORKS ============= */
+    .hwoto {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.264);
+        display: none;
+        text-align: center;
+        animation: ann1 .4s alternate;
+    }
+
+    @keyframes ann1{
+        0%{
+            transform: scale(0);
+        }
+    }
+    .descr {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 10px;
+        background-color: #fff;
+        height: 750px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descr p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+
+    .descr span {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+
+    .descr .userNM {
+        font-size: 24px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+    }
+
+    .e1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        border: solid 1px black;
+        border-radius: 5px;
+        margin: 6px;
+        min-height: 100px;
+        min-width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .e1 img {
+        width: 200px;
+    }
+
+    .e4P {
+        color: rgb(159, 16, 16);
+
+    }
+
+    .bda {
+        width: 150px;
+        height: 30px;
+        font-size: 22px;
+        border: solid 1px black;
+        border-radius: 6px;
+        background-color: black;
+        color: #fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aad {
+        position: absolute;
+        right: -50px;
+        color: black;
+    }
+
+
+
+
+
+
+
+
+    /* contaner    ===  ===a==== */
+    .container2 {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.407);
+        /* display: none; */
+    }
+
+    .sool p {
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        font-weight: 900;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .sool {
+        width: 80%;
+        min-height: 300px;
+        padding: 10px;
+        background-color: #ffffff85;
+        display: flex;
+        border-radius: 20px 0 10px 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .qcmQ {
+        width: 80%;
+        min-height: 200px;
+        padding: 10px;
+        background-color: #ffffff8e;
+        border-radius: 20px 0 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    .chois {
+        font-weight: 900;
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-right: 20px;
+    }
+
+    .btn_valide {
+        font-size: 20px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 5px 0;
+        font-weight: 900;
+        border: none;
+        color: black;
+        cursor: pointer;
+        position: relative;
+        background-color: rgba(255, 247, 247, 0.67);
+        text-decoration: none;
+        width: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .btn_valide::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 255, 68);
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+    }
+
+    .btn_valide:hover::before {
+        transform: translateX(0);
+    }
+
+
+    .radio-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: "Readex Pro", sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+    .radio-input input[type="radio"] {
+        display: none;
+    }
+
+    .radio-input label {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        color: #fff;
+        border: 1px solid #ccc;
+        background-color: #212121;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        margin: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .radio-input label:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .radio-input input[type="radio"]:checked+label:before {
+        background-color: green;
+        top: 0;
+    }
+
+    .radio-input input[type="radio"]:checked+label {
+        background-color: rgb(0, 255, 55);
+        color: #000000;
+        border-color: rgb(129, 235, 129);
+        animation: radio-translate 0.3s ease-in-out;
+    }
+
+    @keyframes radio-translate {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+
+
+    .popupT {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #0000006f;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .tim_ful {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+
+    .etat {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .etat_par {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-size: 18px;
+        letter-spacing: 1px;
+
+        margin-bottom: 60px;
+    }
+
+    .etat_img {
+        width: 90px;
+        height: 90px;
+        top: 10px;
+        position: absolute;
+
+    }
+
+    .next {
+        width: 40%;
+        padding: 6px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background-color: #e7edeb;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .next img {
+        width: 15%;
+        margin-right: 20px;
+    }
+
+    .next:hover {
+        background-color: #dcdcdc;
+
+    }
+
+    .next2 {
+        width: 40%;
+        padding: 6px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background-color: #e7edeb;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .next2 img {
+        width: 15%;
+        margin-right: 20px;
+    }
+
+    .next2:hover {
+        background-color: #dcdcdc;
+
+    }
+
+
+
+    .add_display .etat {
+        animation: pop .4s alternate;
+    }
+
+    @keyframes pop {
+        0% {
+            transform: scale(.2);
+        }
+    }
+
+    .pg_result {
+        width: 80%;
+        height: 90%;
+        background-color: #eefeff;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .user_Anme {
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 30px;
+    }
+
+    /* .conteur {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: solid 1px rgb(0, 0, 0);
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+    }
+
+    .conteur p {
+        position: absolute;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+    }
+
+    .labas {
+        font-size: 20px;
+        top: 10px;
+        left: -10px;
+    }
+
+    .hasan {
+        font-size: 22px;
+        top: -13px;
+        right: 15px;
+    }
+
+    .hasanJidan {
+        font-size: 25px;
+        right: -90px;
+    }
+
+
+    .dv2 {
+        width: 100%;
+        height: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sp1 {
+        width: 50%;
+        height: 100%;
+        background-color: #04ff68;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .sp2 {
+        width: 50%;
+        height: 100%;
+        background-color: #eefeff;
+    } */
+
+    .repoint {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    .pg_result h5 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        margin-left: 20px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .replay {
+        padding: 10px 20px;
+        border: none;
+        background-color: rgb(11, 224, 11);
+        color: #000000;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .add_display {
+        display: flex;
+    }
+
+    .spinner {
+        position: relative;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        width: 400px;
+        border-radius: 8px;
+        filter: drop-shadow(0 0 2px #fff);
+        /* overflow: hidden; */
+    }
+
+    .spainer2:before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        border-radius: 8px 0 0 8px;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        animation: load_5123 30s linear;
+    }
+
+    @keyframes load_5123 {
+        100% {
+            width: 0%;
+        }
+    }
+
+    .conter {
+        position: absolute;
+        left: -60px;
+        font-size: 20px;
+        padding: 7px;
+        background-color: #000000;
+        border-radius: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 900;
+        color: #fff;
+        letter-spacing: 1.5px;
+    }
+
+
+
+
+
+    .add_displayNONE {
+        display: none;
+    }
+
+    .add_display {
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="inscription">
+        <div class="intro">
+            <button class="bextToinscript">التالي </button>
+        </div>
+        <div class="cnt2">
+            <h2 class="titel">مرحبا بك في مسابقة السيرة النبوية </h2>
+            <div class="name_user">
+                <input type="text" class="name_userinput" placeholder="">
+                <p class="name_para">الإسم الكامل</p>
+            </div>
+
+            <button class="start1">اَلتَّالِي </button>
+            <div class="hwoto">
+                <div class="descr">
+                    <div>
+                        <span class="userNM">mstaph</span>
+
+                        <p> هذه طريقة الإجابة على الأسئلة </p>
+                    </div>
+                    <div class="e1">
+                        <img src="img/e2.png" alt="">
+                        <p>بعد إختيار الجواب الصحيح </p>
+                    </div>
+                    <div class="e1">
+                        <img src="img/e1.png" alt="">
+                        <p>نقوم بضغط على الأيقونة بجانب الجواب</p>
+                    </div>
+                    <div class="e1">
+                        <img src="img/e3.png" alt="">
+                        <p>تم نقوم بتاكيد الجواب من خلال الضغط على زر التاكيد </p>
+                        <span>
+                            " Enter " أو الضغط من لوحة المفاتيح على زر
+                        </span>
+                    </div>
+                    <div class="e1">
+                        <img src="img/e4.png" alt="">
+                        <p class="e4P">! لا تنسى أن مدة الإجابة على السؤال محدودة</p>
+                    </div>
+                    <button class="bda">إبدا <p class="aad"></p></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="container2">
+            <div class="sool">
+                <p class="Question"></p>
+            </div>
+            <div class="qcmQ">
+                <div class="radio-input">
+                    <p class="chois" id="chois1"></p>
+                    <input value="value-1" name="value-radio" id="value-1" type="radio">
+                    <label for="value-1">1</label>
+                </div>
+                <div class="radio-input">
+                    <p class="chois" id="chois2"></p>
+                    <input value="value-2" name="value-radio" id="value-2" type="radio">
+                    <label for="value-2">2</label>
+                </div>
+                <div class="radio-input">
+                    <p class="chois" id="chois3"></p>
+                    <input value="value-3" name="value-radio" id="value-3" type="radio">
+                    <label for="value-3">3</label>
+                </div>
+            </div>
+            <div class="spinner"><span class="conter">00</span></div>
+            <button class="btn_valide">تاكيد</button>
+            <div class="popupT">
+                <div class="etat">
+                    <img src="img/time-manager.png" alt="" class="tim_ful">
+                    <p class="etat_par">إنتهى الوقت </p>
+                    <button class="next2"><img src="img/arrow (1).png" alt="">التالي </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pg_result">
+            <h1 class="user_Anme">mustapha</h1>
+            <!-- <span class="conteur">
+                <p class="labas">متوسط</p>
+                <p class="hasan">حسن </p>
+                <p class="hasanJidan">حسن جدا </p>
+                <div class="dv2">
+                    <span class="sp1"></span>
+                    <span class="sp2"></span>
+                </div>
+            </span> -->
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <h1 class="repoint no9"></h1>
+                <h5>: نتيجتك</h5>
+            </div>
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <h1 class="repoint miz"></h1>
+                <h5>: الميزة</h5>
+            </div>
+            <button class="replay">إعادة المسابقة </button>
+        </div>
+    </div>
+
+    <script>
+        let btn_replay = document.querySelector(".replay");
+    
+        btn_replay.onclick=()=>{
+            location.reload();
+        }
+        
+
+
+        let container2 = document.querySelector(".container2");
+
+        let btn1 = document.querySelector(".bextToinscript");
+        let intro = document.querySelector(".intro");
+        let inscri = document.querySelector(".cnt2");
+        btn1.addEventListener("click", () => {
+            intro.classList.add('add_displayNONE')
+            inscri.classList.add('add_display')
+        })
+
+
+        let pg_inscr = document.querySelector(".inscription")
+        let input_name_user = document.querySelector(".name_userinput")
+        let btnSTART = document.querySelector(".start1");
+
+
+        let pg_howto = document.querySelector(".hwoto")
+        let btnSTART2 = document.querySelector(".bda")
+        btnSTART2.disabled = false
+        btnSTART2.addEventListener('click', () => {
+            btnSTART2.disabled = true
+            i2 = 3
+            var inte = setInterval(() => {
+                document.querySelector(".aad").innerHTML = i2;
+                i2--;
+                if (i2 == 0) {
+                    clearInterval(inte);
+                    setTimeout(() => {
+                        container.classList.remove("add_displayNONE")
+                        pg_inscr.classList.add('add_displayNONE')
+                        spainer.classList.add('spainer2');
+                        restartINtervl();
+                        Question.innerHTML = Object.keys(my_object)[i]
+                        choi1.innerHTML = Object.values(my_object)[i][0]
+                        choi2.innerHTML = Object.values(my_object)[i][1]
+                        choi3.innerHTML = Object.values(my_object)[i][2]
+                    }, 1000)
+                }
+            }, 1000)
+
+
+        })
+
+
+
+        let btn_valide = document.querySelector(".btn_valide");
+        let popupT = document.querySelector(".popupT");
+        let container = document.querySelector(".container")
+        let input3 = document.getElementById("value-3")
+        let input2 = document.getElementById("value-2")
+        let input1 = document.getElementById("value-1")
+        var next_btn = document.querySelector(".next");
+        var next_btn2 = document.querySelector(".next2");
+        var arr_inputs = [input3, input2, input1]
+        let pg_result = document.querySelector(".pg_result")
+        let choi1 = document.getElementById("chois1");
+        let choi2 = document.getElementById("chois2");
+        let choi3 = document.getElementById("chois3");
+
+
+        let spainer = document.querySelector(".spinner");
+
+        let conter = document.querySelector(".conter");
+
+        let Question = document.querySelector(".Question");
+
+        let img_atat = document.querySelector(".etat_img");
+
+        let compter = document.querySelector(".dv2");
+        btn_valide.disabled = true;
+
+        window.onload = () => {
+            container.classList.add("add_displayNONE")
+
+        }
+
+        btnSTART.addEventListener("click", () => {
+            if (input_name_user.value.length > 4) {
+                // pg_inscr.classList.add('add_displayNONE')
+                pg_howto.classList.add("add_display")
+                document.querySelector(".userNM").innerHTML = ' ' + input_name_user.value + ' ';
+            }
+            else {
+                input_name_user.focus();
+            }
+        })
+
+
+        let my_object = {
+            'مَتَى وُلِدَ اَلنَّبِيُّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ ':
+                [' اَلثَّانِيَ عَشَرَ مِنْ رَبِيعْ اَلْأَوَّلِ ، عَامُ اَلْفِيلَ ', ' اَلْخَامِسَ عَشَرَ مِنْ رَبِيعْ اَلْأَوَّلِ ، عَامُ اَلْفِيلَ ', ' اَلْعَاشِرَ مِنْ رَبِيعْ اَلْأَوَّلِ ، عَامُ اَلْفِيلَ '],
+
+
+
+            'مِنْ أَوَّلِ مُرْضِعَةٍ لِلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ بَعْدَ أُمِّهِ ؟ ':
+                [' حَلِيمَة اَلسَّعْدِيَّة ', ' أُمُّ حَمْزَة ', ' ثُوَيْبَة مَوْلَاةَ أَبِي لَهَب '],
+
+
+
+            ' كَمٌّ كَانَ عُمْرُ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ عِنْدَ وَفَاةِ جَدِّهِ عَبْدَ اَلْمُطَّلِبْ ؟ ':
+                [' عَشَرُ سَنَوَاتٍ ', ' ثَمَانٍ سَنَوَاتٍ ', ' خَمْسُ سَنَوَاتٍ '],
+
+
+
+            ' عِنْدَمَا وَلَّدَتْ أُمُّ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ بِهِ ، رَأَتْ نُورًا خَرَجَ مِنْهَا فَأَضَاءَ لَهَا ':
+                [' قُصُورُ اَلشَّامِ ', ' مَكَّة ', ' فَارِسُ '],
+
+
+
+            ' كَمْ كَانَ عُمْرُ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ عِنْدَ وَفَاةِ أُمِّهِ ؟ ':
+                [' سَبْعُ سَنَوَاتٍ ', ' سِتُّ سَنَوَاتٍ ', ' تِسْعُ سَنَوَاتٍ '],
+
+
+
+            ' كَمٌّ كَانَ عُمْرُ اَلنَّبِيِّ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ عِنْدَ وَفَاةِ وَالِدِهِ ؟ ':
+                [' سَنَةٌ وَاحِدَةٌ ', ' أَرْبَعَةُ أَشْهُرٍ ', ' مَاتَ قَبْلَ وِلَادَتِهِ '],
+
+
+
+
+            ' مَا اِسْمُ أُمِّ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ ؟ ':
+                [' حَلِيمَة اَلسَّعْدِيَّة ', ' هِنْدْ بِنْتْ عُتْبَة ', ' آمِنَة بِنْتْ وَهْبْ '],
+
+
+
+
+            ' مِنْ هِيَ حَاضِنَةٌ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ بَعْد وَفَاةِ أُمِّهِ ؟ ':
+                [' رُفَيْدَة بِنْتُ كَعْبٍ ', ' بِرْكَةُ أُمِّ أَيْمَنْ ', ' أُمٌّ سَلِيطٍ بِنْتِ عَبِيدٍ '],
+
+
+
+
+            ' مَا اِسْمُ وَالِدِ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ ؟ ':
+                [' عَبْدُ اَللَّهْ بْنْ اَلزُّبَيْرْ ', ' أَبُو طَالِبْ ', ' عَبْدُ اَللَّهْ بْنْ عَبْدِ اَلْمُطَّلِبْ '],
+
+
+
+            ' أَيْنَ كَانَ اَلنَّبِيُّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ يَتْحَنَثْ قَبْلُ اَلْبَعْثَةِ ؟ ':
+                [' غَارُ ثَوْرٍ ', ' غَارُ حِرَاءِ ', ' غَارُ ثَوْرٍ '],
+
+
+
+            'ما اسم الراهب الذي أخبر عم النبي صلى الله عليه وسلم أبو طالب بأن ابن أخيه - صلى الله عليه وسلم - النبي المنتظر؟':
+                [' بِنْيَامِينْ ', ' بِحَيْرَى ', ' سَلَامٌ '],
+
+
+
+            ' كَمْ كَانَ عُمَرْ خَدِيجَة رَضِيَ اَللَّهُ عَنْهَا عِنْدَمَا تَزَوَّجَتْ بِالنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ ؟ ':
+                [' وَاحِد وَأَرْبَعُونَ عَامًا ', ' اِثْنَانِ وَأَرْبَعُونَ عَامًا ', ' أَرْبَعُونَ عَامًّا '],
+
+
+
+            ' كَمْ كَانَ عُمْرُ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ عِنْدَ حُضُورِهِ حِلْفَ اَلْفُضُولِ ؟ ':
+                [' عِشْرُونَ سَنَةً ', ' خَمْسُ وَعِشْرُونَ سَنَةً ', ' اِثْنَانِ وَعِشْرُونَ سَنَةً '],
+
+
+
+
+            ' كَمْ كَانَ عُمْرُ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ عِنْدَمَا تَزَوَّجَ خَدِيجَة رَضِيَ اَللَّهُ عَنْهَا ؟ ':
+                [' ثَلَاثُونَ عَامًا ', ' خَمْسُ وَعِشْرُونَ عَامًا ', ' ثَمَانٍ وَعِشْرُونَ عَامًّا '],
+
+
+
+            ' فِي أَيِّ شَهْرٍ نَزَلَ جِبْرِيلْ عَلَيْهِ اَلسَّلَامُ بِالْقُرْآنِ عَلَى اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ ؟ ':
+                [' شَهْرُ رَمَضَانْ ', ' شَهْرُ شَوَّالِ ', ' شَهْرُ رَجَبْ '],
+
+
+
+            ' مِنْ أَوَّلِ مِنْ أَسْلَمَ مِنْ اَلنِّسَاءِ ؟ ':
+                [' جُوَيْرِيَة بِنْتْ اَلْحَارِثْ ', ' أَسْمَاءْ بِنْتْ أَبِي بَكْرْ اَلصِّدِّيقْ ', ' خَدِيجَة بِنْتْ خُوَيْلِدْ '],
+
+
+
+            ' مِنْ هُوَ اَلَّذِي ذَهَبَتْ إِلَيْهِ خَدِيجَة رَضِيَ اَللَّهُ عَنْهَا إِلَيْهِ لِتُخْبِرهُ بِمَا حَدَثَ لِلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ فِي غَارِ حِرَاءِ مِنْ نُزُولِ اَلْوَحْيِ ؟ ':
+                [' اِبْنُ عَمِّهَا وَرَقَة بْنْ نُوفَلْ ', ' أَبُو بَكْرْ اَلصِّدِّيقْ ', ' عُمَرْ بْنْ اَلْخَطَّابْ '],
+
+
+
+            ' كَمُّ يَوْمًا اِنْقَطَعَ اَلْوَحْيُ بَعْدَ نُزُولِهِ اَلْمَرَّةَ اَلْأُولَى عَنْ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ ؟ ':
+                [' عِشْرُونَ يَوْمًا ', ' أَرْبَعُونَ يَوْمًا ', ' أُسْبُوعٌ '],
+
+
+
+            ' مِنْ أَوَّلِ مِنْ أَسْلَمَ مِنْ اَلصِّبْيَانِ ؟ ':
+                [' عَلِي بْنْ أَبِي طَالِبْ ', ' عَبْدُ اَللَّهْ بْنْ اَلزُّبَيْرْ ', ' زَيْدْ بْنْ حَارِثَة '],
+
+
+
+            ' مِنْ أَوَّلِ مِنْ أَسْلَمَ مِنْ اَلرِّجَالِ ؟ ':
+                [' وَرَقَة بْنْ نُوفَلْ ', ' عُثْمَانْ بْنْ عَفَّانْ ', ' أَبُو بَكْرْ اَلصِّدِّيقْ '],
+
+
+
+            ' مِنْ أَوَّلِ مِنْ أَسْلَمَ مِنْ اَلْمُوَالِي ؟ ':
+                [' زَيْدْ بْنْ حَارِثَة ', ' بِلَالْ بْنْ رَبَاحْ ', ' سَلْمَانْ اَلْفَارِسِي '],
+
+
+
+            ' مِنْ أَبْلَغَ حَمْزَة رَضِيَ اَللَّهُ عَنْهُ ، عَمُّ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ ، بِمَا قَالَهُ أَبُو جَهْلْ لَعْنَةِ اَللَّهِ ، لِلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ مِنْ سَبٍّ وَشَتْمٍ وَتَنْقِيصٍ لِدِينِهِ ، مَا أَدَّى إِلَى إِسْلَامِهِ رَضِيَ اَللَّهُ عَنْهُ ؟ ':
+                [' مُوَلَّاةً لَعَبَدَ اَللَّهِ بْنْ جُدْعَانْ ', ' أَبُو بَكْرْ اَلصِّدِّيقْ ', ' عَلِي بْنْ أَبِي طَالِبْ '],
+
+
+
+            ' كَمٌّ كَانَتْ مُدَّةُ دَعْوَةِ اَلنَّبِيِّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ لِلْإِسْلَامِ سِرًّا ؟ ':
+                [' ثَلَاثُ سِنِينَ ', ' أَرْبَعُ سَنَوَاتٍ ', ' سَنَتَانِ '],
+
+
+            ' فِي أَيِّ سَنَةٍ هَاجَرَ اَلْمُسْلِمُونَ إِلَى اَلْحَبَشَةِ ؟ ':
+                [' اَلسَّنَةُ اَلْخَامِسَةُ لِلْبَعْثَةِ ', ' اَلسَّنَةُ اَلثَّانِيَةُ لِلْبَعْثَةِ ', ' اَلسَّنَةُ اَلرَّابِعَةُ لِلْبَعْثَةِ '],
+
+
+            ' بِمَنْ بَعَثَتْ قُرَيْشَ إِلَى مَلِكِ اَلْحَبَشَةِ تَطْلُبُ مِنْهُ إِرْجَاعِ اَلْمُسْلِمِينَ إِلَى مَكَّةَ ؟ ':
+                [' عَمْرُو بْنْ اَلْعَاصْ ، وَعَبْدْ اَللَّهِ بْنْ أُمِّيَّةٍ ', ' اَلْعَاصْ بْنْ وَائِلْ ، وَالْأُسُودُ بْنْ عَبْدِ اَلْمُطَّلِبْ ', ' اَلْأَسْوَدَ بْنْ عَبْدِ يَغُوثْ ، وَالْحَارِثَ بِمْ قَيْسْ اَلسَّهْمِي '],
+
+
+            ' إِلَى أَيْنَ خَرَجَ اَلنَّبِيُّ صَلَّى اَللَّهُ عَلَيْهِ وَسَلَّمَ يَطْلُبُ اَلنُّصْرَةَ لِدِينِهِ ، بَعْدُ مَوْتِ عَمِّهِ أَبُو طَالِبْ ؟ ':
+                [' اَلطَّائِفُ ', ' اَلْيَمَنُ ', ' اَلْحَبَشَةُ '], ' مَتَى أَسْلَمَ حَمْزَة بْنْ عَبْدِ اَلْمُطَّلِبْ ': [' اَلسَّنَةُ اَلسَّادِسَةُ لِلْبَعْثَةِ ',
+
+
+                    ' اَلسَّنَةُ اَلسَّادِيَّةُ بَعْدَ اَلْهِجْرَةِ ', ' اَلسَّنَةُ اَلثَّانِيَةُ لِلْبَعْثَةِ '], ' مَتَّىْ أَسْلَمَ عُمَرْ بْنْ اَلْخَطَّابْ ':
+                [' لِسَنَةِ اَلْأُولَى مِنْ اَلْبَعْثَةِ ', ' اَلسَّنَةُ اَلرَّابِعَةُ مِنْ اَلْبَعْثَةِ ', ' اَلسَّنَةُ اَلسَّادِسَةُ مِنْ اَلْبَعْثَةِ '],
+
+
+            ' مَاهِي اَلسُّورَةُ اَلَّتِي سَمِعَهَا عُمَرْ بْنْ اَلْخَطَّابْ وَكَانَتْ سَبَبًا فِي إِسْلَامِهِ ':
+                [' سُورَةٌ آلَ عِمْرَانْ ', ' سُورَةُ طه ', ' سُورَةٌ اَلرَّحِمَانِ '],
+
+
+            ' كَمٌّ دَامَ حِصَارُ كُفَّارَ قُرَيْشِ وَمُقَاطَعَتِهِمْ لِلْمُسْلِمِينَ ':
+                [' ثَلَاثُ سَنَوَاتٍ ', ' خَمْسَةُ سَنَوَاتٍ ', ' سَنَتَانِ ']
+        }
+
+        arr_inputs.forEach(p => {
+            p.addEventListener("click", () => {
+                if (arr_inputs[0].checked == true || arr_inputs[1].checked == true || arr_inputs[2].checked == true) {
+                    btn_valide.disabled = false;
+                    window.addEventListener("keydown", (ke) => {
+                        if (ke.key == "Enter") {
+                            btn_valide.click()
+                        }
+                    })
+                }
+                else {
+                    btn_valide.disabled = true;
+
+                }
+            })
+        })
+
+
+
+        istrue = true;
+        i = 0;
+        let resulta = 0;
+
+
+
+
+
+        btn_valide.addEventListener("click", () => {
+            spainer.classList.remove('spainer2');
+            setTimeout(() => {
+                spainer.classList.add('spainer2');
+            }, 10)
+            restartINtervl();
+            let arr_inputs2 = [
+                input1.checked,
+                input3.checked,
+                input2.checked,
+                input1.checked,
+                input2.checked,
+                input3.checked,
+                input3.checked,
+                input2.checked,
+                input3.checked,
+                input1.checked,
+                input2.checked,
+                input3.checked,
+                input1.checked,
+                input2.checked,
+                input1.checked,
+                input3.checked,
+                input1.checked,
+                input2.checked,
+                input1.checked,
+                input3.checked,
+                input1.checked,
+                input1.checked,
+                input1.checked,
+                input1.checked,
+                input1.checked,
+                input1.checked,
+                input1.checked,
+                input3.checked,
+                input2.checked,
+                input1.checked
+            ]
+
+            arr_inputs.forEach(p => {
+                p.checked = false;
+            })
+            if (arr_inputs2[i]) {
+                resulta += 1;
+                console.log(resulta)
+
+            }
+
+
+
+            btn_valide.disabled = true;
+            if (i < Object.keys(my_object).length - 1) {
+                i++
+                Question.innerHTML = Object.keys(my_object)[i]
+                choi1.innerHTML = Object.values(my_object)[i][0]
+                choi2.innerHTML = Object.values(my_object)[i][1]
+                choi3.innerHTML = Object.values(my_object)[i][2]
+            }
+
+            else {
+                container2.classList.add("add_displayNONE")
+                document.querySelector(".user_Anme").innerHTML = `${input_name_user.value} : السيد `;
+                document.querySelector(".no9").innerHTML = `${resulta}/30`;
+                if (resulta <= 10) {
+                    document.querySelector(".miz").innerHTML = "متوسط "
+                }
+
+                if (resulta > 10 && resulta <= 20) {
+                    document.querySelector(".miz").innerHTML = "حسن"
+                }
+
+                if (resulta > 20) {
+                    document.querySelector(".miz").innerHTML = "حسن جدا"
+                }
+                pg_result.classList.add("add_display");
+            }
+
+
+
+
+        })
+
+
+
+        next_btn2.addEventListener("click", () => {
+            popupT.classList.remove("add_display");
+            spainer.classList.remove('spainer2');
+
+            setTimeout(() => {
+                spainer.classList.add('spainer2');
+            }, 10)
+
+            restartINtervl();
+
+            // let arr_inputs2 = [
+            //     input1.checked,
+            //     input3.checked,
+            //     input2.checked,
+            //     input1.checked,
+            //     input2.checked,
+            //     input3.checked,
+            //     input3.checked,
+            //     input2.checked,
+            //     input3.checked,
+            //     input1.checked,
+            //     input2.checked,
+            //     input3.checked,
+            //     input1.checked,
+            //     input2.checked,
+            //     input1.checked,
+            //     input3.checked,
+            //     input1.checked,
+            //     input2.checked,
+            //     input1.checked,
+            //     input3.checked,
+            //     input1.checked,
+            //     input1.checked,
+            //     input1.checked,
+            //     input1.checked,
+            //     input1.checked,
+            //     input1.checked,
+            //     input1.checked,
+            //     input3.checked,
+            //     input2.checked,
+            //     input1.checked,
+            //     input3.checked
+            // ]
+
+            arr_inputs.forEach(p => {
+                p.checked = false;
+            })
+
+            // if (arr_inputs2[i]) {
+            //     resulta += 1;
+            //     console.log(resulta)
+
+            // }
+
+            btn_valide.disabled = true;
+
+            if (i < Object.keys(my_object).length - 1) {
+                i++
+                Question.innerHTML = Object.keys(my_object)[i]
+                choi1.innerHTML = Object.values(my_object)[i][0]
+                choi2.innerHTML = Object.values(my_object)[i][1]
+                choi3.innerHTML = Object.values(my_object)[i][2]
+            }
+
+            else if (i > Object.keys(my_object).length) {
+                container2.classList.remove("add_display")
+                document.querySelector(".no9").innerHTML = `${resulta}/30`;
+                document.querySelector(".user_Anme").innerHTML = `${input_name_user} : السيد `;
+                if (resulta <= 10) {
+                    document.querySelector(".miz").innerHTML = "متوسط "
+                }
+
+                if (resulta > 10 && resulta <= 20) {
+                    document.querySelector(".miz").innerHTML = "حسن"
+                }
+
+                if (resulta > 20) {
+                    document.querySelector(".miz").innerHTML = "حسن جدا"
+                }
+                pg_result.classList.add("add_display");
+            }
+        })
+
+
+
+
+        function restartINtervl() {
+            var b = 29;
+            let time_conterv = setInterval(time_conter, 1000)
+            function time_conter() {
+                if (b == 0) {
+                    btn_valide.disabled = true;
+                    conter.innerHTML = b;
+                    popupT.classList.add("add_display");
+                    spainer.classList.remove('spainer2');
+                    clearInterval(time_conterv)
+                }
+                btn_valide.onclick = () => {
+                    clearInterval(time_conterv)
+                }
+
+                conter.innerHTML = b;
+                b--;
+
+            }
+        }
+
+    
+    </script>
+</body>
+
+</html>
